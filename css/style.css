@@ -788,7 +788,10 @@ ul {
   height: 40px;
   display: inline;
 }
-
+.a-footer-text {
+  color: #ffffff;
+  margin-right: 16px;
+}
 /*----------- portfolio -----------*/
 
 .box-list-portfolio-btt {
