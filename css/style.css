@@ -93,6 +93,11 @@ img {
 }
 .modal-svg {
 }
+.button-close-modal:hover,
+.button-close-modal:focus {
+  background: #404bbf;
+  fill: #ffffff;
+}
 .box-text-hero {
 }
 .box-btt-hero {
@@ -105,75 +110,69 @@ img {
 .box-btt-hero:focus {
 }
 .text-in-modal {
-  margin: 72px 24px 34px 24px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24px / 16px);
   text-align: center;
+  margin-bottom: 16px;
 }
 .lable-name {
-  display: grid;
-  margin-left: 24px;
 }
 .lable-email {
-  display: grid;
-  margin-top: 8px;
-  margin-bottom: 4px;
-  margin-left: 24px;
 }
 .label-phone {
-  display: grid;
-  margin-left: 24px;
 }
 .lable-comment {
-  display: grid;
-  margin-left: 24px;
 }
 .modal-input {
   position: relative;
+  display: block;
 }
 .modal-icons {
   position: absolute;
-  left: 5px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
 }
 .input-name {
-  width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  position: relative;
+
   outline: transparent;
-  padding-left: 30px;
+  padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 8px;
 }
 .input-email {
-  width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 30px;
+  padding-left: 38px;
   outline: transparent;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 8px;
 }
 .input-phone {
-  width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 30px;
+  padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 8px;
 }
 
 .textarea-comment {
-  width: 360px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -181,13 +180,15 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: calc(14px / 12px);
+  line-height: calc(14 / 12);
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 16px;
   padding-top: 8px;
+  margin-bottom: 16px;
+  resize: none;
 }
 
 .input-email:focus {
@@ -217,14 +218,15 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: calc(14px / 12px);
+  line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: #8e8f99;
-  margin-top: 8px;
+
   margin-bottom: 4px;
 }
 .btt-send {
-  margin: 24px 120px;
+  display: block;
+  margin: 24px auto 0;
   width: 169px;
   height: 56px;
   background: #4d5ae5;
@@ -240,6 +242,7 @@ img {
   background-color: #404bbf;
 }
 .privacy-policy {
+  padding-left: 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -249,11 +252,14 @@ img {
 
   color: #757575;
 }
+.checkbox-privacy-policy {
+  display: flex;
+  align-items: center;
+}
 .policy {
   color: #4d5ae5;
 }
 .checkbox {
-  margin-left: 24px;
   margin-top: 16px;
 }
 .header-list {
@@ -406,6 +412,7 @@ img {
   gap: 24px;
 }
 .modal {
+  padding: 72px 24px 24px;
   position: absolute;
   width: 408px;
   min-height: 576px;
@@ -433,6 +440,9 @@ img {
   right: 24px;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item-our-team-box {
   width: 264px;
@@ -726,11 +736,13 @@ ul {
   background-color: #31d0aa;
 }
 .lable-email-footer {
-  display: grid;
-  margin-left: 80px;
+}
+.email-footer {
+  display: flex;
+  align-items: center;
 }
 .footer-input-email {
-  width: 360px;
+  width: 264px;
   height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -740,6 +752,7 @@ ul {
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: white;
 }
 .footer-input-email:focus {
   border-color: #4d5ae5;
@@ -755,6 +768,7 @@ ul {
   margin-bottom: 16px;
 }
 .btt-footer {
+  margin-left: auto;
   background: #4d5ae5;
   border-radius: 4px;
   width: 165px;
@@ -764,7 +778,7 @@ ul {
   align-items: center;
   border: none;
   margin-left: 24px;
-  margin-top: 34px;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -783,7 +797,17 @@ ul {
   letter-spacing: 0.04em;
   color: #ffffff;
 }
-
+.div-footer-form {
+  margin-left: 80px;
+}
+.form-footer {
+  margin-left: auto;
+}
+.div-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .a-footer-text {
   color: #ffffff;
   margin-right: 16px;

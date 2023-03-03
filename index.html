@@ -99,14 +99,14 @@
                     ></use>
                   </svg>
                 </button>
-                <h2 class="text-in-modal">
+                <p class="text-in-modal">
                   Leave your contacts and we will call you back
-                </h2>
+                </p>
                 <form name="signup_form" autocomplete="on" novalidate>
-                  <label for="" class="lable-name">
+                  <label class="lable-name">
                     <span class="span-text-modal"> Name </span>
                     <span class="modal-input">
-                      <input type="name" name="name" class="input-name" />
+                      <input type="text" name="name" class="input-name" />
                       <svg class="modal-icons" width="18px" height="18px">
                         <use
                           href="./images/modal-icons.svg#icon-person-black"
@@ -117,36 +117,36 @@
                   <label class="label-phone">
                     <span class="span-text-modal"> Phone </span>
                     <span class="modal-input">
-                      <input type="phone" name="phone" class="input-phone" />
-                      <svg class="modal-icons" width="18px" height="18px">
+                      <input type="tel" name="phone" class="input-phone" />
+                      <svg class="modal-icons" width="18px" height="24px">
                         <use
                           href="./images/modal-icons.svg#icon-phone-black"
                         ></use>
                       </svg>
                     </span>
                   </label>
-                  <label for="" class="lable-email">
+                  <label class="lable-email">
                     <span class="span-text-modal"> Email </span>
                     <span class="modal-input">
                       <input type="email" name="email" class="input-email" />
-                      <svg class="modal-icons" width="18px" height="18px">
+                      <svg class="modal-icons" width="18px" height="24px">
                         <use
                           href="./images/modal-icons.svg#icon-email-black"
                         ></use>
                       </svg>
                     </span>
                   </label>
-                  <label for="" class="lable-comment">
+                  <label class="lable-comment">
                     <span class="span-text-modal"> Comment </span>
                     <textarea
                       name="comment"
-                      rows="5"
+                      rows=""
                       placeholder="Text input"
                       class="textarea-comment"
                     ></textarea>
                   </label>
-                  <label>
-                    <div class="checkbox">
+                  <div class="checkbox">
+                    <label class="checkbox-privacy-policy">
                       <input
                         type="checkbox"
                         name="privacy-policy"
@@ -156,8 +156,8 @@
                         I accept the terms and conditions of the
                         <a href="" class="policy">Privacy Policy</a></span
                       >
-                    </div>
-                  </label>
+                    </label>
+                  </div>
                   <button type="submit" class="btt-send cursor-pointer">
                     Send
                   </button>
@@ -557,30 +557,37 @@
           </ul>
         </div>
 
-        <form name="signup_form" autocomplete="on" novalidate>
-          <label for="" class="lable-email-footer">
-            <span class="span-text-modal-footer"> Subscribe </span>
+        <form
+          name="signup_form"
+          autocomplete="on"
+          novalidate
+          class="form-footer container"
+        >
+          <div class="div-footer-form">
+            <p class="span-text-modal-footer">Subscribe</p>
+            <div class="div-footer">
+              <div class="email-footer">
+                <label for="" class="lable-email-footer">
+                  <input
+                    type="email"
+                    name="email"
+                    class="footer-input-email"
+                    placeholder="E-mail"
+                  />
+                </label>
+              </div>
 
-            <input
-              type="email"
-              name="email"
-              class="footer-input-email"
-              placeholder="E-mail"
-            />
-          </label>
+              <label for="">
+                <button type="submit" class="btt-footer cursor-pointer">
+                  <span class="text-btt-footer a-footer-text"> Subscribe </span>
+                  <svg width="24px" height="20px">
+                    <use href="./images/modal-icons.svg#icon-Frame-3"></use>
+                  </svg>
+                </button>
+              </label>
+            </div>
+          </div>
         </form>
-        <div>
-          <button type="button" class="btt-footer cursor-pointer">
-            <span class="text-btt-footer"
-              ><a href="" class="text-decoration-none a-footer-text">
-                Subscribe
-              </a></span
-            >
-            <svg width="24px" height="20px">
-              <use href="./images/modal-icons.svg#icon-Frame-3"></use>
-            </svg>
-          </button>
-        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
