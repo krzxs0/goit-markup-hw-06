@@ -140,18 +140,20 @@
                     <span class="span-text-modal"> Comment </span>
                     <textarea
                       name="comment"
-                      rows=""
+                      rows="1"
                       placeholder="Text input"
                       class="textarea-comment"
                     ></textarea>
                   </label>
                   <div class="checkbox">
-                    <label class="checkbox-privacy-policy">
+                    <label class="checkbox-privacy-policy checkbox-label">
                       <input
                         type="checkbox"
                         name="privacy-policy"
                         value="weekly"
+                        class="checkbox"
                       />
+                      <span class="checkbox-icon"></span>
                       <span class="privacy-policy">
                         I accept the terms and conditions of the
                         <a href="" class="policy">Privacy Policy</a></span
@@ -561,31 +563,23 @@
           name="signup_form"
           autocomplete="on"
           novalidate
-          class="form-footer container"
+          class="form-footer"
         >
-          <div class="div-footer-form">
-            <p class="span-text-modal-footer">Subscribe</p>
-            <div class="div-footer">
-              <div class="email-footer">
-                <label for="" class="lable-email-footer">
-                  <input
-                    type="email"
-                    name="email"
-                    class="footer-input-email"
-                    placeholder="E-mail"
-                  />
-                </label>
-              </div>
+          <p class="span-text-modal-footer">Subscribe</p>
+          <div class="div-footer">
+            <input
+              type="email"
+              name="email"
+              class="footer-input-email"
+              placeholder="E-mail"
+            />
 
-              <label for="">
-                <button type="submit" class="btt-footer cursor-pointer">
-                  <span class="text-btt-footer a-footer-text"> Subscribe </span>
-                  <svg width="24px" height="20px">
-                    <use href="./images/modal-icons.svg#icon-Frame-3"></use>
-                  </svg>
-                </button>
-              </label>
-            </div>
+            <button type="submit" class="btt-footer cursor-pointer">
+              Subscribe
+              <svg width="24px" height="20px">
+                <use href="./images/modal-icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>

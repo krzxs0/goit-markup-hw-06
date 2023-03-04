@@ -118,12 +118,20 @@ img {
   margin-bottom: 16px;
 }
 .lable-name {
+  display: block;
+  margin-bottom: 8px;
 }
 .lable-email {
+  display: block;
+  margin-bottom: 8px;
 }
 .label-phone {
+  display: block;
+  margin-bottom: 8px;
 }
 .lable-comment {
+  display: block;
+  margin-bottom: 16px;
 }
 .modal-input {
   position: relative;
@@ -145,7 +153,6 @@ img {
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 8px;
 }
 .input-email {
   width: 100%;
@@ -157,7 +164,6 @@ img {
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 8px;
 }
 .input-phone {
   width: 100%;
@@ -168,7 +174,6 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 8px;
 }
 
 .textarea-comment {
@@ -187,7 +192,7 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 16px;
   padding-top: 8px;
-  margin-bottom: 16px;
+  display: block;
   resize: none;
 }
 
@@ -221,7 +226,7 @@ img {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: #8e8f99;
-
+  display: block;
   margin-bottom: 4px;
 }
 .btt-send {
@@ -260,7 +265,24 @@ img {
   color: #4d5ae5;
 }
 .checkbox {
-  margin-top: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+.checkbox-label {
+  display: inline-block;
+}
+.checkbox:checked + .checkbox-icon {
+  background-color: #404bbf;
+  background-image: url('../images/checkbox-modal.svg');
+  background-size: contain;
 }
 .header-list {
   display: flex;
@@ -651,7 +673,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(40px / 36px);
+  line-height: calc(40 / 36);
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 72px;
@@ -705,7 +727,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(24px / 16px);
+  line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
@@ -747,7 +769,14 @@ ul {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  padding-left: 30px;
+  padding-left: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(24 / 12);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
   outline: transparent;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -762,7 +791,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(24px / 16px);
+  line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
@@ -778,7 +807,13 @@ ul {
   align-items: center;
   border: none;
   margin-left: 24px;
-
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  gap: 16px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -786,17 +821,7 @@ ul {
 .btt-footer:focus {
   background-color: #404bbf;
 }
-.text-btt-footer {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(24px / 16px);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
+
 .div-footer-form {
   margin-left: 80px;
 }
@@ -810,7 +835,6 @@ ul {
 }
 .a-footer-text {
   color: #ffffff;
-  margin-right: 16px;
 }
 /*----------- portfolio -----------*/
 
